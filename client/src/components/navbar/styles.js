@@ -41,8 +41,8 @@ const StyledMenuWrapper = styled.ul`
 `
 
 export {
-    StyledContainerNavbar,
-    StyledTitleWrapper,
-    StyledSubTitleWrapper,
-    StyledMenuWrapper
+  StyledContainerNavbar,
+  StyledTitleWrapper,
+  StyledSubTitleWrapper,
+  StyledMenuWrapper
 }

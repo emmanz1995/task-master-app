@@ -10,17 +10,17 @@ const path = require('path')
 //   res.send('<h1>TaskMaster App ;)</h1>')
 // })
 
-app.use(cors())
+// app.use(cors())
 
-app.use(express.json())
-
-app.use(express.static(path.resolve(__dirname, '../client/build')))
+app.use(express.static(path.join(__dirname, '../client/build')))
 
 app.use('/api/tasks', taskRoutes)
 
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'))
+  res.sendFile(path.join(__dirname, '../client/build/index.html'))
 })
+
+app.use(express.json())
 
 connect()
 app.listen(PORT, () => {

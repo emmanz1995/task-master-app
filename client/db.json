@@ -1,0 +1,13 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "name": "Requirements Gathering!",
+      "description": "I have to do ground research for the our next project!",
+      "priority": true,
+      "completed": false,
+      "reminder": true,
+      "createdAt": "2022-06-20"
+    }
+  ]
+}

@@ -6,9 +6,9 @@ const connect = require('./utils/db')
 const taskRoutes = require('./routes/taskRoutes')
 const path = require('path')
 
-app.get('/', (req, res) => {
-  res.send('<h1>TaskMaster App ;)</h1>')
-})
+// app.get('/', (req, res) => {
+//   res.send('<h1>TaskMaster App ;)</h1>')
+// })
 
 app.use(cors())
 

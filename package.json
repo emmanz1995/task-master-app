@@ -8,8 +8,7 @@
     "start": "nodemon src/index.js",
     "dev": "nodemon src/index.js",
     "eslint": "eslint './src'",
-    "build": "npm run build --prefix client",
-    "client": "npm start --prefix client"
+    "build": "cd client && npm install && npm run build"
   },
   "repository": {
     "type": "git",

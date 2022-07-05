@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import Dashboard from './pages/dashboard/Dashboard'
+// import Dashboard from './pages/dashboard/Dashboard'
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`

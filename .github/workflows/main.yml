@@ -18,7 +18,7 @@ jobs:
       - name: lint
         run: npm run eslint
       - name: build
-        run: npm run build --prefix client
+        run: npm run build
       - name: pushing code to heroku
         uses: akhileshns/heroku-deploy@v3.8.8
         if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message, ' '), '#skip') }}

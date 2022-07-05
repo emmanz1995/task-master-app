@@ -1,9 +1,9 @@
 const express = require('express')
 const app = express()
 // const cors = require('cors')
-const { PORT } = require('./utils/config')
-const connect = require('./utils/db')
-const taskRoutes = require('./routes/taskRoutes')
+const { PORT } = require('./src/utils/config')
+const connect = require('./src/utils/db')
+const taskRoutes = require('./src/routes/taskRoutes')
 const path = require('path')
 
 // app.get('/', (req, res) => {
@@ -12,12 +12,12 @@ const path = require('path')
 
 // app.use(cors())
 
-app.use(express.static(path.join(__dirname, '../client/build')))
+app.use(express.static(path.join(__dirname, '/client/build')))
 
 app.use('/api/tasks', taskRoutes)
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build/index.html'))
+  res.sendFile(path.join(__dirname, '/client/build', 'index.html'))
 })
 
 app.use(express.json())

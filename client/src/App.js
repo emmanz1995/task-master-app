@@ -21,7 +21,8 @@ function App() {
   return (
     <div>
       <GlobalStyles />
-      <Dashboard />
+      {/*<Dashboard />*/}
+      <h1>Hello World!</h1>
     </div>
   )
 }

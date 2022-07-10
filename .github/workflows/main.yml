@@ -28,6 +28,8 @@ jobs:
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
           heroku_app_name: "task-master-tool"
           heroku_email: "emmanza2@gmail.com"
+          healthcheck: https://task-master-tool.herokuapp.com/health
+          checkstring: "ok"
       - uses: actions/checkout@v2
         if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message, ' '), '#skip') }}
       - name: Bump version and push tag
